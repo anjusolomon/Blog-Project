@@ -1,0 +1,23 @@
+{% extends "posts/layout.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+          <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+    
+            <img src="{{ user.profile.image.url }}"alt="default" style="width:128px;height:128px"  class="circle responsive-img"> 
+        <div class="media-body">
+    
+          <h2 class="account-heading">&nbsp;{{ user.username }}</h2>
+          <p class="text-secondary">{{ user.email }}</p>
+        </div>
+      </div>
+      <!-- FORM HERE -->
+    </div>
+{% endblock %}
+
+  
+             
+           
+            
